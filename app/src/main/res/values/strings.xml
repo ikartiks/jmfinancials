@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Reddit</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <string name="noNet">Connect to the internet and try again</string>
+    <string name="permissionDenied">You will not be able to view images!</string>
+</resources>

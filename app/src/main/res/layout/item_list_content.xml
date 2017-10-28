@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/left_margin"
+    android:layout_marginBottom="@dimen/left_margin"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <com.kartikshah.reddit.ui.CustomTextView
+        android:id="@+id/Body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ttfResourseName="fonts/s.ttf"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginStart="@dimen/left_margin"
+        android:textSize="@dimen/comment_text_size"
+        tools:text="asdasdasdajsdahjsbdhabsdhabsdhabshbdahsbdhsb"
+        />
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/left_margin"
+        android:layout_marginBottom="@dimen/left_margin"
+        android:adjustViewBounds="true"
+        android:elevation="@dimen/left_margin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.kartikshah.reddit.ui.CustomTextView
+            android:id="@+id/UpVotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ttfResourseName="fonts/s.ttf"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginEnd="@dimen/left_margin"
+            android:gravity="center"
+            tools:text="4.3k"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_action_good"
+            android:drawablePadding="-80dp"
+            />
+
+        <com.kartikshah.reddit.ui.CustomTextView
+            android:id="@+id/Comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ttfResourseName="fonts/s.ttf"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginEnd="@dimen/left_margin"
+            android:gravity="center"
+            tools:text="4.3k"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/comments"
+            android:drawablePadding="-80dp"
+            />
+        <!-- Todo couldnt find better image on the net -->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/ViewParent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.kartikshah.reddit.ui.CustomTextView
+
+            android:id="@+id/Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ttfResourseName="fonts/s.ttf"
+            android:textSize="@dimen/comment_text_size"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginStart="@dimen/left_margin"
+            tools:text="asdasdasdasdasdads dddddsadasdasadasdasasdaasdasdasdasdasdadasdadasda asdasdasdasdasdasdsasda"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/left_margin">
+
+            <com.kartikshah.reddit.ui.CustomTextView
+                android:id="@+id/UpVotes"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:ttfResourseName="fonts/s.ttf"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_action_good"
+                tools:text="4.3k"/>
+
+            <ImageView
+                android:id="@+id/ExpandCollapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginEnd="@dimen/left_margin"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

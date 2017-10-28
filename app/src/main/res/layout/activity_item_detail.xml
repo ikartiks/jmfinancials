@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kartikshah.reddit.ItemDetailActivity"
+    tools:ignore="MergeRootFrame"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.kartikshah.reddit.ui.GifImageView
+        android:id="@+id/gifImage"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:gifResourseId="loading.gif"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+    <!-- todo this is my library, you can find it on github.com/ikartiks -->
+    <com.kartikshah.reddit.ui.CustomTextView
+        android:id="@+id/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ttfResourseName="fonts/s.ttf"
+        android:layout_margin="@dimen/left_margin"
+        android:textSize="@dimen/comment_text_size"
+        tools:text="asdasdasdajsdahjsbdhabsdhabsdhabshbdahsbdhsb"
+        android:transitionName="profile"
+        />
+
+    <FrameLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
