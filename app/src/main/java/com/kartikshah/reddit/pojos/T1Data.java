@@ -6,6 +6,7 @@ package com.kartikshah.reddit.pojos;
 
 public class T1Data {
 
+    //todo things like id , body which are common in both T3 & T1Data objects can be added in base class for code reuse
     String subreddit_id;
     String body;
     long depth;
